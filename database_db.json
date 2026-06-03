@@ -1,0 +1,635 @@
+{
+  "tenants": [
+    {
+      "id": "org_yatra",
+      "name": "Yatra Shield Operations",
+      "metaAppId": "987654321012345",
+      "phoneNumberId": "phone_wa_9918",
+      "businessAccountId": "waba_acc_7718",
+      "systemToken": "EAAGxx89128...EA881920"
+    }
+  ],
+  "currentUser": {
+    "id": "user_kaust",
+    "name": "Kaust",
+    "email": "admin@yatrashield.com",
+    "role": "Admin",
+    "organizationId": "org_yatra",
+    "avatarUrl": "https://i.pravatar.cc/150?u=kaust"
+  },
+  "contacts": [
+    {
+      "id": "c_1",
+      "organizationId": "org_yatra",
+      "name": "Rahul Sharma",
+      "phone": "+919876543210",
+      "email": "rahul.s@gmail.com",
+      "status": "Active",
+      "lastActive": "2024-06-03T08:10:00.000Z",
+      "tags": [
+        "Frequent Traveler",
+        "Ernakulam Junction"
+      ],
+      "currentNodeId": null
+    },
+    {
+      "id": "c_2",
+      "organizationId": "org_yatra",
+      "name": "Sneha Nair",
+      "phone": "+919876543211",
+      "email": "sneha.n@gmail.com",
+      "status": "Active",
+      "lastActive": "2024-06-03T09:05:00.000Z",
+      "tags": [
+        "Vytilla Hub",
+        "New Customer"
+      ],
+      "currentNodeId": null
+    },
+    {
+      "id": "c_3",
+      "organizationId": "org_yatra",
+      "name": "Arjun Krishnan",
+      "phone": "+919876543212",
+      "email": "arjun.k@gmail.com",
+      "status": "Active",
+      "lastActive": "2024-06-03T09:15:00.000Z",
+      "tags": [
+        "Ernakulam Junction"
+      ],
+      "currentNodeId": "node_timing"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_1",
+      "contactId": "c_1",
+      "organizationId": "org_yatra",
+      "status": "Closed",
+      "lastMessageAt": "2026-06-03T09:40:42.315Z",
+      "unreadCount": 1
+    },
+    {
+      "id": "conv_2",
+      "contactId": "c_2",
+      "organizationId": "org_yatra",
+      "status": "Closed",
+      "lastMessageAt": "2024-06-03T09:10:00.000Z",
+      "unreadCount": 0
+    },
+    {
+      "id": "conv_3",
+      "contactId": "c_3",
+      "organizationId": "org_yatra",
+      "status": "Open",
+      "assignedAgentId": "user_agent_1",
+      "lastMessageAt": "2024-06-03T09:17:00.000Z",
+      "unreadCount": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": "m_1",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "hi",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:00:00.000Z"
+    },
+    {
+      "id": "m_2",
+      "conversationId": "conv_1",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Welcome to Yatra Shield! 🛡️ Where would you like your hygiene kit delivered?\n\n1️⃣ Vytilla Hub\n2️⃣ Ernakulam Junction",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:00:05.000Z"
+    },
+    {
+      "id": "m_3",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Ernakulam Junction",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:01:00.000Z"
+    },
+    {
+      "id": "m_4",
+      "conversationId": "conv_1",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Great choice! 📍 Ernakulam Junction selected.\n\nWhen would you like it?\n\n⚡ In 15 mins\n🕐 Customized Time",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:01:05.000Z"
+    },
+    {
+      "id": "m_5",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "In 15 mins",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:02:00.000Z"
+    },
+    {
+      "id": "m_6",
+      "conversationId": "conv_1",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Perfect! 🚀 Select your Yatra Shield pack:\n\n📦 Pack of 1 – ₹59\n📦 Pack of 4 – ₹199\n🔢 Custom Amount (₹59 per kit)",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:02:05.000Z"
+    },
+    {
+      "id": "m_7",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Pack of 4 (₹199)",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:03:00.000Z"
+    },
+    {
+      "id": "m_8",
+      "conversationId": "conv_1",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "🧾 *Order Summary*\n📍 Ernakulam Junction\n⏰ In 15 mins\n📦 Pack of 4\n💰 Total: ₹199\n\nComplete your payment via UPI:\n👉 upi://pay?pa=yatrashield@okaxis&pn=YatraShield&am=199",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:03:05.000Z"
+    },
+    {
+      "id": "m_9",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Payment done ✓",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:05:00.000Z"
+    },
+    {
+      "id": "m_10",
+      "conversationId": "conv_1",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "🎉 Payment confirmed! Thank you, Rahul!\n\nYour Yatra Shield kit is on its way to Ernakulam Junction. Estimated delivery: 15 minutes.\n\nSafe travels! 🛡️✈️",
+      "status": "Read",
+      "timestamp": "2024-06-03T08:05:10.000Z"
+    },
+    {
+      "id": "m_11",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "order",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:00:00.000Z"
+    },
+    {
+      "id": "m_12",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Welcome to Yatra Shield! 🛡️ Where would you like your hygiene kit delivered?\n\n1️⃣ Vytilla Hub\n2️⃣ Ernakulam Junction",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:00:05.000Z"
+    },
+    {
+      "id": "m_13",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Vytilla Hub",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:01:00.000Z"
+    },
+    {
+      "id": "m_14",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Great choice! 📍 Vytilla Hub selected.\n\nWhen would you like it?\n\n⚡ In 15 mins\n🕐 Customized Time",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:01:05.000Z"
+    },
+    {
+      "id": "m_15",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Customized Time",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:02:00.000Z"
+    },
+    {
+      "id": "m_16",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Please enter your preferred date and time for delivery (e.g. Today 3:00 PM, June 5 at 10 AM):",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:02:05.000Z"
+    },
+    {
+      "id": "m_17",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Today 5 PM",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:03:00.000Z"
+    },
+    {
+      "id": "m_18",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Perfect! 🚀 Select your Yatra Shield pack:\n\n📦 Pack of 1 – ₹59\n📦 Pack of 4 – ₹199\n🔢 Custom Amount (₹59 per kit)",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:03:05.000Z"
+    },
+    {
+      "id": "m_19",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Pack of 1 (₹59)",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:05:00.000Z"
+    },
+    {
+      "id": "m_20",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "🧾 *Order Summary*\n📍 Vytilla Hub\n⏰ Today 5 PM\n📦 Pack of 1\n💰 Total: ₹59\n\n👉 upi://pay?pa=yatrashield@okaxis&pn=YatraShield&am=59",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:05:05.000Z"
+    },
+    {
+      "id": "m_21",
+      "conversationId": "conv_2",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Paid!",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:07:00.000Z"
+    },
+    {
+      "id": "m_22",
+      "conversationId": "conv_2",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "🎉 Payment confirmed! Thank you, Sneha!\n\nYour Yatra Shield kit will be delivered to Vytilla Hub at 5 PM today. Safe travels! 🛡️✈️",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:07:10.000Z"
+    },
+    {
+      "id": "m_23",
+      "conversationId": "conv_3",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "yatra",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:14:00.000Z"
+    },
+    {
+      "id": "m_24",
+      "conversationId": "conv_3",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Welcome to Yatra Shield! 🛡️ Where would you like your hygiene kit delivered?\n\n1️⃣ Vytilla Hub\n2️⃣ Ernakulam Junction",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:14:05.000Z"
+    },
+    {
+      "id": "m_25",
+      "conversationId": "conv_3",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "Ernakulam Junction",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:15:00.000Z"
+    },
+    {
+      "id": "m_26",
+      "conversationId": "conv_3",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Great choice! 📍 Ernakulam Junction selected.\n\nWhen would you like it?\n\n⚡ In 15 mins\n🕐 Customized Time",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:15:05.000Z"
+    },
+    {
+      "id": "m_27",
+      "conversationId": "conv_3",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "In 15 mins",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:16:00.000Z"
+    },
+    {
+      "id": "m_28",
+      "conversationId": "conv_3",
+      "direction": "Outgoing",
+      "type": "Text",
+      "content": "Perfect! 🚀 Select your Yatra Shield pack:\n\n📦 Pack of 1 – ₹59\n📦 Pack of 4 – ₹199\n🔢 Custom Amount (₹59 per kit)",
+      "status": "Read",
+      "timestamp": "2024-06-03T09:16:05.000Z"
+    },
+    {
+      "id": "incoming_1780479642315",
+      "conversationId": "conv_1",
+      "direction": "Incoming",
+      "type": "Text",
+      "content": "hello",
+      "status": "Read",
+      "timestamp": "2026-06-03T09:40:42.315Z"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp_1",
+      "organizationId": "org_yatra",
+      "name": "Ernakulam Junction – Platform Launch",
+      "templateId": "tpl_1",
+      "targetAudience": {
+        "tags": [
+          "Ernakulam Junction"
+        ]
+      },
+      "scheduledAt": "2024-06-03T06:00:00.000Z",
+      "status": "Completed",
+      "sentCount": 480,
+      "deliveredCount": 471,
+      "readCount": 342
+    },
+    {
+      "id": "camp_2",
+      "organizationId": "org_yatra",
+      "name": "Vytilla Hub – Weekend Promo",
+      "templateId": "tpl_1",
+      "targetAudience": {
+        "tags": [
+          "Vytilla Hub"
+        ]
+      },
+      "scheduledAt": "2024-06-03T07:30:00.000Z",
+      "status": "Completed",
+      "sentCount": 310,
+      "deliveredCount": 303,
+      "readCount": 210
+    },
+    {
+      "id": "camp_3",
+      "organizationId": "org_yatra",
+      "name": "Abandoned Cart – Payment Reminder",
+      "templateId": "tpl_2",
+      "targetAudience": {
+        "tags": [
+          "Frequent Traveler"
+        ]
+      },
+      "scheduledAt": "2024-06-03T10:00:00.000Z",
+      "status": "Scheduled",
+      "sentCount": 0,
+      "deliveredCount": 0,
+      "readCount": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": "tpl_1",
+      "name": "yatra_welcome_offer",
+      "category": "MARKETING",
+      "status": "APPROVED",
+      "components": [
+        {
+          "type": "HEADER",
+          "format": "TEXT",
+          "text": "🛡️ Yatra Shield – Travel Hygiene Kit"
+        },
+        {
+          "type": "BODY",
+          "text": "Hi {{1}}, travelling through Ernakulam? Get your Yatra Shield hygiene kit delivered right to you in just 15 minutes at Ernakulam Junction or Vytilla Hub. Reply *ORDER* to get started!"
+        },
+        {
+          "type": "FOOTER",
+          "text": "Safe travels. Stay hygienic."
+        }
+      ]
+    },
+    {
+      "id": "tpl_2",
+      "name": "yatra_payment_reminder",
+      "category": "UTILITY",
+      "status": "APPROVED",
+      "components": [
+        {
+          "type": "BODY",
+          "text": "Hi {{1}}, your Yatra Shield order is pending payment! Complete your UPI payment to confirm delivery. Pay ₹{{2}} to finalize."
+        }
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf_yatra_shield",
+      "organizationId": "org_yatra",
+      "name": "Yatra Shield Ordering Flow",
+      "status": "Active",
+      "trigger": "yatra, order, hi",
+      "nodes": [
+        {
+          "id": "node_trigger",
+          "type": "Trigger",
+          "title": "Order Trigger",
+          "config": {
+            "keyword": "yatra, order, hi",
+            "branches": [
+              {
+                "condition": "default",
+                "nextNodeId": "node_location"
+              }
+            ]
+          },
+          "position": {
+            "x": 359.04569630380365,
+            "y": -178.607843913082
+          }
+        },
+        {
+          "id": "node_location",
+          "type": "Interactive",
+          "title": "Delivery Location",
+          "config": {
+            "text": "Welcome to Yatra Shield! 🛡️ Where would you like your hygiene kit delivered?",
+            "buttons": [
+              "Vytilla Hub",
+              "Ernakulam Junction"
+            ],
+            "branches": [
+              {
+                "condition": "Vytilla Hub",
+                "nextNodeId": "node_timing"
+              },
+              {
+                "condition": "Ernakulam Junction",
+                "nextNodeId": "node_timing"
+              }
+            ]
+          },
+          "position": {
+            "x": 550.1672922345367,
+            "y": 22.86291108858896
+          }
+        },
+        {
+          "id": "node_timing",
+          "type": "Interactive",
+          "title": "Delivery Timing",
+          "config": {
+            "text": "Great choice! When would you like it?",
+            "buttons": [
+              "In 15 mins",
+              "Customized Time"
+            ],
+            "branches": [
+              {
+                "condition": "In 15 mins",
+                "nextNodeId": "node_pack"
+              },
+              {
+                "condition": "Customized Time",
+                "nextNodeId": "node_custom_time"
+              }
+            ]
+          },
+          "position": {
+            "x": 239.4004695829384,
+            "y": 266.5701097321666
+          }
+        },
+        {
+          "id": "node_custom_time",
+          "type": "TextInput",
+          "title": "Custom Delivery Time",
+          "config": {
+            "text": "Please enter your preferred date and time for delivery (e.g. Today 3:00 PM, June 5 at 10 AM):",
+            "branches": [
+              {
+                "condition": "default",
+                "nextNodeId": "node_pack"
+              }
+            ]
+          },
+          "position": {
+            "x": 663.9070421159315,
+            "y": 375.6932709393607
+          }
+        },
+        {
+          "id": "node_pack",
+          "type": "Interactive",
+          "title": "Select Pack",
+          "config": {
+            "text": "Select your Yatra Shield pack:",
+            "buttons": [
+              "Pack of 1 (₹59)",
+              "Pack of 4 (₹199)",
+              "Custom Amount"
+            ],
+            "branches": [
+              {
+                "condition": "Pack of 1 (₹59)",
+                "nextNodeId": "node_payment"
+              },
+              {
+                "condition": "Pack of 4 (₹199)",
+                "nextNodeId": "node_payment"
+              },
+              {
+                "condition": "Custom Amount",
+                "nextNodeId": "node_custom_amt"
+              }
+            ]
+          },
+          "position": {
+            "x": 296.552073033177,
+            "y": 472.6525168404846
+          }
+        },
+        {
+          "id": "node_custom_amt",
+          "type": "Number",
+          "title": "Custom Kit Quantity",
+          "config": {
+            "text": "How many kits do you need? (₹59 per kit)",
+            "branches": [
+              {
+                "condition": "default",
+                "nextNodeId": "node_payment"
+              }
+            ]
+          },
+          "position": {
+            "x": 804.1152528434934,
+            "y": 596.1004438073076
+          }
+        },
+        {
+          "id": "node_payment",
+          "type": "PaymentLink",
+          "title": "UPI Payment",
+          "config": {
+            "mediaUrl": "upi://pay?pa=yatrashield@okaxis&pn=YatraShield",
+            "text": "🧾 Please complete your payment via UPI to confirm your order.\n\n👉 upi://pay?pa=yatrashield@okaxis&pn=YatraShield",
+            "branches": [
+              {
+                "condition": "default",
+                "nextNodeId": "node_thanks"
+              }
+            ]
+          },
+          "position": {
+            "x": 495.38252811996864,
+            "y": 707.1317865087144
+          }
+        },
+        {
+          "id": "node_thanks",
+          "type": "SendMessage",
+          "title": "Thank You 🎉",
+          "config": {
+            "text": "🎉 Payment confirmed! Thank you for choosing Yatra Shield!\n\nYour hygiene kit will be delivered as requested. Safe travels! 🛡️✈️",
+            "branches": []
+          },
+          "position": {
+            "x": 300,
+            "y": 920
+          }
+        }
+      ]
+    }
+  ],
+  "queueJobs": [],
+  "users": [
+    {
+      "id": "user_kaust",
+      "name": "Kaust",
+      "email": "admin@yatrashield.com",
+      "role": "Admin",
+      "organizationId": "org_yatra"
+    },
+    {
+      "id": "user_agent_1",
+      "name": "Anjali Menon",
+      "email": "anjali@yatrashield.com",
+      "role": "Agent",
+      "organizationId": "org_yatra"
+    }
+  ]
+}
